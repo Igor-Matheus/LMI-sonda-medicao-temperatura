@@ -9,8 +9,8 @@
 //definindo o pino digital utilizado pelo sensor
 #define DS18B20 4 
 
-// function declarations
-// função para deep sleep
+// declarando função para deep sleep
+void deepSleep();
 
 OneWire ourWire(DS18B20); // configura uma instância ONEWIRE para se comunicar com o sensor
 DallasTemperature sensors(&ourWire); // biblioteca DallasTemperature utiliza a OneWire
@@ -28,4 +28,7 @@ void loop() {
   Serial.println("*C"); //imprime o texto na serial
 }
 
-// function definitions
+// implementação da função deepSleep
+void deepSleep() {
+
+}
